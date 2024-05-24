@@ -25,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`font-sans ${inter.className}`}>
         <header>
           <Suspense fallback={<p>Loading...</p>}>
             <Head/>
