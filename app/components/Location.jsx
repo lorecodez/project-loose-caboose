@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
+
+const GoogleMap = lazy(() => import('@/app/components/GoogleMap').then( module => {
+  return {default: module.default}
+}))
 
 
 export default function Location() {
   return (
     <div>
-        <picture>
-
-        </picture>
+      <Suspense>
+        <GoogleMap/>
+      </Suspense>
       
     </div>
   )

@@ -8,6 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Loose Caboose Hobbies",
   description: "The Loose Caboose is a COMPLETE train & hobby shop located in Napa. Call us at 707-258-1222 visit us 820 3rd Street in Napa, CA at the corner of 3rd and Soscol Ave",
+  keywords: ['hobby', 'toys', 'trains', 'model trains', 'rc', 'rc boats', 'rc cars', 'rc planes', 'games', 'table top games', 'hobbiest', 'fun', 'shop', 'sale', 'napa', 'historical', 'downtown']
 };
 
 const Head = lazy(() => import('@/app/components/Head').then( module => {

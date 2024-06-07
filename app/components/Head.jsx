@@ -17,29 +17,70 @@ export default function Head() {
           />
         </picture>
         <menu className='flex items-center gap-5 py-3 px-6 font-bold text-2xl'>
-            <li>
-              <Link
-              href={'/'}
+            <li className='hover:scale-105 transition-all duration-200 ease-in-out'>
+              <button
+              onClick={() =>{
+                const element = document.getElementById('#')
+                element?.scrollIntoView({
+                  behavior: 'smooth'
+                })
+              }}
               title='Home'
               >
                 Home
-              </Link>
+              </button>
             </li>
-            <li>
-              <Link
-              href={'/about'}
+            <li className='hover:scale-105 transition-all duration-200 ease-in-out'>
+              <button
               title='About'
+              onClick={() =>{
+                const element = document.getElementById('about')
+                element?.scrollIntoView({
+                  behavior: 'smooth'
+                })
+              }}
               >
                 About
-              </Link>
+              </button>
             </li>
-            <li>
-              <Link
-              href={'/contact'}
+            <li className='hover:scale-105 transition-all duration-200 ease-in-out'>
+              <button
+              title='Schedule'
+              onClick={() =>{
+                const element = document.getElementById('schedule')
+                element?.scrollIntoView({
+                  behavior: 'smooth'
+                })
+              }}
+              >
+                Schedule
+              </button>
+            </li>
+            <li className='hover:scale-105 transition-all duration-200 ease-in-out'>
+              <button
+              title='Schedule'
+              onClick={() =>{
+                const element = document.getElementById('location')
+                element?.scrollIntoView({
+                  behavior: 'smooth'
+                })
+              }}
+              >
+                Location
+              </button>
+            </li>
+            <li className='hover:scale-105 transition-all duration-200 ease-in-out'>
+              <button
               title='Contact'
+              onClick={() =>{
+                const element = document.getElementById('contact')
+                element?.scrollIntoView({
+                  behavior: 'smooth'
+                })
+              }}
               >
                 Contact
-              </Link>
+              </button>
             </li>
         </menu>
     </div>

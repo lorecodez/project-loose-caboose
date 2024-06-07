@@ -5,20 +5,20 @@ import Owner from '@/public/owner.jpg'
 
 export default function Schedule() {
   return (
-    <section className='flex flex-col items-center w-full h-full '>
+    <section id='schedule' className='flex flex-col items-center w-full h-full '>
         
-        <div className='px-6 py-3 flex items-center w-full h-full gap-5'>
-            <picture className=' relative flex items-center justify-center border-4  rounded-full overflow-clip'>
+        <div className='px-6 py-3 flex items-center w-full h-full gap-20'>
+            <picture className=' relative flex items-center justify-center border-4 border-yellow-300 rounded-full overflow-clip'>
                 <Image
                 src={Owner}
-                alt='owner'
+                alt='hobby store manger Ballard'
                 height={400}
                 width={400}
                 className='w-full object-cover shadow-inner'
                 />
             </picture>
             <aside className='w-full flex flex-col items-center justify-center'>
-                <h2 className='text-8xl font-bold self-start'>Schedule</h2>
+                <h2 className='text-8xl font-bold self-start text-amber-950'>Schedule</h2>
                 <table className='w-full text-left text-2xl'>
                     <thead className='w-full'>
                         <tr>

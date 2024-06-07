@@ -9,6 +9,18 @@ const Schedule = lazy(() => import('@/app/components/Schedule').then( module => 
   return {default: module.default}
 }))
 
+const Location = lazy(() => import('@/app/components/Location').then( module => {
+  return {default: module.default}
+}))
+
+const Contact = lazy(() => import('@/app/components/Contact').then( module => {
+  return {default: module.default}
+}))
+
+const About = lazy(() => import('@/app/components/About').then( module => {
+  return {default: module.default}
+}))
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24 pt-0 gap-20">
@@ -18,6 +30,15 @@ export default function Home() {
       <hr/>
       <Suspense fallback={<p>Loading...</p>}>
         <Schedule/>
+      </Suspense>
+      <Suspense>
+        <Location/>
+      </Suspense>
+      <Suspense>
+        <Contact/>
+      </Suspense>
+      <Suspense>
+        <About/>
       </Suspense>
     </main>
   );
