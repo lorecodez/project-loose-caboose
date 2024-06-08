@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { lazy, Suspense } from "react";
+
 
 const Hero = lazy(() => import('@/app/components/Hero').then( module => {
   return {default: module.default}
@@ -31,13 +31,13 @@ export default function Home() {
       <Suspense fallback={<p>Loading...</p>}>
         <Schedule/>
       </Suspense>
-      <Suspense>
+      <Suspense fallback={<p>Loading...</p>}>
         <Location/>
       </Suspense>
-      <Suspense>
+      <Suspense fallback={<p>Loading...</p>}>
         <Contact/>
       </Suspense>
-      <Suspense>
+      <Suspense fallback={<p>Loading...</p>}>
         <About/>
       </Suspense>
     </main>

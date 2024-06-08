@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans ${inter.className}`}>
-        <header>
+        <header className="sticky top-0 z-20">
           <Suspense fallback={<p>Loading...</p>}>
             <Head/>
           </Suspense>

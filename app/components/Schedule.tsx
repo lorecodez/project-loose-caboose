@@ -11,7 +11,8 @@ export default function Schedule() {
             <picture className=' relative flex items-center justify-center border-4 border-yellow-300 rounded-full overflow-clip'>
                 <Image
                 src={Owner}
-                alt='hobby store manger Ballard'
+                alt='Loose Caboose Napa hobby store manger Ballard'
+                title='Loose Caboose Napa Hobby Store Manger Ballard'
                 height={400}
                 width={400}
                 className='w-full object-cover shadow-inner'

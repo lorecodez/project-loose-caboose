@@ -1,17 +1,44 @@
 'use client'
-import React from 'react';
-import Link from 'next/link';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Logo from '@/public/loose-caboose-logo-no-bg.png';
+import { motion, useScroll, useMotionValueEvent } from 'framer-motion';
 
 export default function Head() {
+
+  const [hidden, setHidden] = useState(false);
+
+  const { scrollY } = useScroll();
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+
+    const prev = scrollY.getPrevious();
+
+    
+
+    if ( latest > prev! && latest > 150){
+      setHidden(true);
+    } else {
+      setHidden(false);
+    };
+
+  });
+
   return (
-    <div className='flex justify-start items-center w-full'>
+    <motion.div
+    variants={{
+      visibile: { y: 0},
+      hidden: { y: "-130%"},
+    }}
+    animate={hidden ? "hidden" : "visible"}
+    transition={{ duration: 0.35, ease: "easeInOut"}}
+    className='flex justify-start items-center w-full bg-stone-50'
+    >
         <picture>
           <Image
           src={Logo}
-          title='Logo'
-          alt='Logo'
+          title='Loose Caboose Hobby Store Logo'
+          alt='Loose Caboose Hobby Store Logo'
           width={100}
           height={100}
           />
@@ -83,6 +110,6 @@ export default function Head() {
               </button>
             </li>
         </menu>
-    </div>
+    </motion.div>
   )
 }

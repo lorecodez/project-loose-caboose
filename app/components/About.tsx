@@ -4,10 +4,11 @@ import Image from 'next/image'
 
 export default function About() {
   return (
-    <section className='px-6 py-3 w-full flex gap-20'>
+    <section id={'about'} className='px-6 py-3 w-full flex gap-20'>
       
       <picture className='w-1/3'>
         <Image
+        title='Loose Caboose Napa Hobby Store Products'
         alt='toys, model trains, model cars, model, planes, model boats'
         src={Boxes}
         height={600}
@@ -16,7 +17,7 @@ export default function About() {
         />
       </picture>
       <artical className='text-2xl w-2/3'>
-        <h3 className='font-bold text-8xl my-5 text-amber-950'>About</h3>
+        <h4 className='font-bold text-8xl my-5 text-amber-950'>About</h4>
         <div className='flex flex-col gap-2 leading-relaxed'>
           <p>
             The Loose Caboose was begun by Ray Dahlgren in 1995, according to manager Ballard, because he
