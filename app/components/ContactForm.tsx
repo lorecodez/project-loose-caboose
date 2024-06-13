@@ -41,14 +41,14 @@ export default function ContactForm() {
           />
         </div>
 
-        <div className='flex flex-col'>
+        <div className='flex flex-col h-52'>
           <label htmlFor="message">Your Message</label>
           <textarea 
           name="message" 
           id="message"
           title='Your Message'
           placeholder='What can we help you with?'
-          className='p-2 rounded-2xl'
+          className='p-2 rounded-2xl h-52'
           />
         </div>
 

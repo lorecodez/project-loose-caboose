@@ -23,11 +23,10 @@ const About = lazy(() => import('@/app/components/About').then( module => {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24 pt-0 gap-20">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 pt-0 gap-44">
       <Suspense fallback={<p>Loading...</p>}>
         <Hero/>
       </Suspense>
-      <hr/>
       <Suspense fallback={<p>Loading...</p>}>
         <Schedule/>
       </Suspense>

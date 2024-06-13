@@ -47,7 +47,7 @@ export default function Head() {
             <li className='hover:scale-105 transition-all duration-200 ease-in-out'>
               <button
               onClick={() =>{
-                const element = document.getElementById('#')
+                const element = document.getElementById('home')
                 element?.scrollIntoView({
                   behavior: 'smooth'
                 })

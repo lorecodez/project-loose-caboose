@@ -5,7 +5,7 @@ import Store from '@/public/loose-caboose-store.jpg'
 
 export default function Hero() {
   return (
-    <section className='flex items-center w-full h-full px-6 py-3 '>
+    <section id='home' className='flex items-center w-full h-full px-6 py-3 '>
       <aside className='w-1/2 flex flex-col items-start justify-center gap-7'>
         <h1 className='font-bold text-8xl text-amber-950'>
           Trains, Hobbies, and More ...

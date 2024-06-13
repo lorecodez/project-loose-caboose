@@ -8,7 +8,7 @@ export default function Foot() {
 
       <div>
         <div>
-          <menu>
+          <menu className='text-2xl'>
             <li>
               <button>
                 Home
